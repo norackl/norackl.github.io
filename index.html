@@ -1,7 +1,92 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="myscripts.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+<div class="container">
+       
+
+    <input class="container_toggle" type="checkbox" id="switch" name="mode">
+    <label for="switch">Toggle</label>
+</div>
+<style>
+    a {
+        color: var(--lightColor);
+        font-family: 'Lato', sans-serif;
+
+    }
+    </style>
+<div class ="title">
+    <h1>Causality and Knowledge Lab</h1>
+</div>
+
+
+
+<div class="description">
+    <h1>About</h1>
+    <h4>Building intelligent systems applicable in the real world requires more than prediction.
+      Driving decisions requires causal insights. 
+      Reliability requires models that are provably robust under clear assumptions. 
+       Deploying data-driven technology in society requires accounting  for the complex dynamics and feedback loops mediating this interaction. 
+       Aligning with social desiderata such as fairness requires a philosophically coherent treatment. 
+       ACMI lab studies core machine learning methods, their applications in healthcare, and their social impacts.
+        We seek to address these outer loop questions, while leveraging breakthroughs in representation learning to address the diverse raw data sources that deep learning has made accessible.
+ 
+ </h4>
+  </div>
+  <div class ="tab1">
+    <a href="/Users/norachen/Documents/GitHub/norackl.github.io/index.html">Home</a>
+
+  </div>
+
+  <div class ="tab2">
+    
+    <a href="/Users/norachen/Documents/GitHub/norackl.github.io/second.html">People</a>
+
+  </div>
+
+
+  <div class ="tab3">
+    <a href="/Users/norachen/Documents/GitHub/norackl.github.io/third.html">Publications</a>
+
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ var checkbox = document.querySelector('input[name=mode]');
+
+checkbox.addEventListener('change', function() {
+    if(this.checked) {
+        trans()
+        document.documentElement.setAttribute('data-theme', 'dark')
+    } else {
+        trans()
+        document.documentElement.setAttribute('data-theme', 'light')
+    }
+})
+
+let trans = () => {
+    document.documentElement.classList.add('transition');
+    window.setTimeout(() => {
+        document.documentElement.classList.remove('transition');
+    }, 1000)
+}
+</script>
+
 </body>
 </html>
+
+
