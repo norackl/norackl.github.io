@@ -97,7 +97,7 @@ input:checked + label:after {
 }
 .description {
   font-family: 'Lato', sans-serif;
-  width:70%;
+  width:65%;
   margin-top:4%;
 }
 .tab1{
